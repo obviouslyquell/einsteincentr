@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Roboto&display=swap');
 .h1-heading{
     margin: 0;
 }
@@ -184,4 +185,123 @@ p{
 }
 .directions-benefits-item:first-child{
     margin-top: 15px;
+}
+
+/*-------------------sections-teachers------*/
+
+.teachers-heading{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.teachers-list{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.teachers-item{
+    display: flex;
+    flex-direction: column;
+}
+.teachers-photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:3px solid black;
+    margin-bottom: 50px;
+}
+.teachers-head-paragraph{
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
+}
+.teachers-paragraph{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*-------------------section-reviews---------*/
+
+.reviews-list{
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.reviews-item{
+    width: 300px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-review-name{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.reviews-review{
+    font-family: 'Roboto', sans-serif;
+
+}
+.reviews-heading{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+
+/*yndxmap*/
+.container-map{
+    margin: 30px 0px 0px 0px;
+}
+/*---------section-contacts-------*/
+
+.section-contacts{
+    background: #e1e8ed;
+    height: 150px;
+}
+.contacts-container{
+    padding-top:20px;
+}
+.contacts-list{
+    display: flex;
+    justify-content: space-between;
+}
+.contacts-img{
+    display: flex;
+    flex-direction: column;
+}
+.contacts-heading{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 30px;
+    color: #3A4F66;
+}
+.contacts-item{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 15px;
+    align-items: center;
+}
+.contacts-paragraph-link{
+    text-decoration: none;
+    color:#3A4F66;
+    font-family: 'Montserrat', sans-serif;
+}
+.contacts-paragraph-title{
+    color:#3A4F66;
+    font-family: 'Montserrat', sans-serif;
 }
