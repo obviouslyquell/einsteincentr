@@ -4,6 +4,9 @@
 .h1-heading{
     margin: 0;
 }
+.main{
+    background: rgb(225, 232, 237);
+}
 p{
     margin: 0;
     padding: 0;
@@ -29,11 +32,15 @@ p{
     display: flex;
     align-items: center;
 }
+.header{
+    background: rgb(225, 232, 237);
+}
 .header-container{
     display: flex;
     justify-content: space-between;
     align-content: center;
     height: 100px;
+    
 }
 .nav-list{
     display: flex;
@@ -83,6 +90,11 @@ p{
     font-size: 56px;
     line-height: normal;
 }
+.about-container-paragraph{
+    font-size:12px;
+    font-family: 'Inter', sans-serif;
+    color:aliceblue;
+}
 .about-container-item{
     font-family: 'Inter', sans-serif;
     color:aliceblue;
@@ -128,17 +140,16 @@ p{
 
 /*-----------section-directions--------*/
 
-
 .container-directions{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding-top:30px;
     
 }
 .directions-heading{
     font-family: 'Inter', sans-serif;
-    
+    color:#3A4F66;
     font-size: 40px;
     line-height: normal; 
     margin-bottom:50px;
@@ -155,17 +166,19 @@ p{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     margin-bottom: 20px;
+    color:#3A4F66;
 }
 .directions-text{
     width: 800px;
     font-weight: 500;
     margin-bottom: 15px;
     line-height: 30px;
+    color:#3A4F66;
 }
 .directions-item{
     display: flex;
     margin-bottom: 50px;
-    
+    color:#3A4F66;
     justify-content: space-between;
     align-items: center;
 }
@@ -189,12 +202,17 @@ p{
 
 /*-------------------sections-teachers------*/
 
+
 .teachers-heading{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 40px;
     line-height: normal;
     margin-bottom: 50px;
+    color: #3A4F66;
+    margin-left: auto;
+    margin-right: auto;
+    width: 433px;
 }
 .teachers-list{
     display: flex;
@@ -203,13 +221,18 @@ p{
 }
 .teachers-item{
     display: flex;
+    width: 300px;
     flex-direction: column;
+    border:3px solid rgb(215,236,255, 0.7);
+    border-radius:15px;
+    align-items: center;
+    padding:10px;
 }
 .teachers-photo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border:3px solid black;
+    border:3px solid #3a4f66;
     margin-bottom: 50px;
 }
 .teachers-head-paragraph{
@@ -217,13 +240,16 @@ p{
     font-weight: 500;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
+    color: #3A4F66;
 }
 .teachers-paragraph{
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
+    color: #3A4F66;
 }
 
 /*-------------------section-reviews---------*/
+
 
 .reviews-list{
     display: flex;
@@ -247,10 +273,11 @@ p{
     font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
     font-weight: 600;
+    color: #3a4f66;
 }
 .reviews-review{
     font-family: 'Roboto', sans-serif;
-
+    color: #3a4f66;
 }
 .reviews-heading{
     font-family: 'Inter', sans-serif;
@@ -258,6 +285,10 @@ p{
     font-size: 40px;
     line-height: normal;
     margin-bottom: 50px;
+    color: #3a4f66;
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
 }
 
 
@@ -268,7 +299,7 @@ p{
 /*---------section-contacts-------*/
 
 .section-contacts{
-    background: #e1e8ed;
+    background: #283645;
     height: 150px;
 }
 .contacts-container{
@@ -288,7 +319,7 @@ p{
     font-size: 30px;
     line-height: normal;
     margin-bottom: 30px;
-    color: #3A4F66;
+    color: #8d949d;
 }
 .contacts-item{
     display: grid;
@@ -298,10 +329,26 @@ p{
 }
 .contacts-paragraph-link{
     text-decoration: none;
-    color:#3A4F66;
+    color:#8d949d;  
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 .contacts-paragraph-title{
-    color:#3A4F66;
+    color:#8d949d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+.footer{
+    padding:20px 0px;
+    background: #283645;
+}
+.footer-paragraph{
+    text-align: center;
+    color:#8d949d;
     font-family: 'Montserrat', sans-serif;
 }
