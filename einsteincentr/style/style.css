@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&family=Roboto&display=swap');
+body{
+    min-width: 1230px; /* ограничение на сжатие */
+}
 .h1-heading{
     margin: 0;
 }
@@ -19,7 +22,7 @@ p{
     padding: 0;
 }
 .container{
-    max-width:1200px;
+    width:1200px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -71,9 +74,9 @@ p{
 
 /*------------------------------section-about----------------------------------------*/
 .section-about{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/full_Hl2S7jxE.jpg); /* СПИЗЖЕННО */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/background.jpg); 
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 70% 30%;
     background-repeat: no-repeat
 }
 .about-container{
@@ -192,6 +195,7 @@ p{
 .directions-img{
     width: 300px;
     max-height: 225px;
+    border-radius: 15px;
 }
 .directions-benefits-item{
     margin-bottom: 15px;
@@ -202,7 +206,7 @@ p{
 
 /*-------------------sections-teachers------*/
 
-
+/*
 .teachers-heading{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -223,7 +227,8 @@ p{
     display: flex;
     width: 300px;
     flex-direction: column;
-    border:3px solid rgb(215,236,255, 0.7);
+    border:3px solid #3A4F66;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius:15px;
     align-items: center;
     padding:10px;
@@ -241,13 +246,13 @@ p{
     font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
     color: #3A4F66;
-}
+}*/ /*
 .teachers-paragraph{
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
     color: #3A4F66;
 }
-
+*/
 /*-------------------section-reviews---------*/
 
 
