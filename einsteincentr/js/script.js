@@ -18,11 +18,11 @@ jQuery(document).ready(function () {
     			success: function(data) {
     				//form.html(data);
     				//form.css('opacity','1');
-                    form.find('.status').html('<p>Форма отправлена успешно</p>');
+                    form.find('.status').html('<p>Форма отправлена успешно. <br>Для возврата к форме обновите страницу.</p>');
                     //$('#myModal').modal('show') // для бутстрапа
     			},
     			error:	 function() {
-    			     form.find('.status').html('<p>Серверная ошибка</p>');
+    			     form.find('.status').html('<p>Серверная ошибка, обновите страницу.</p>');
     			}
     		});
     	}
@@ -30,3 +30,4 @@ jQuery(document).ready(function () {
 
 
 });
+

@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
+    
+    shrink-to-fit=no">
     <meta name="description" content="Детский развивающий центр Эйнштейн приглашает Вас на занятия по ментальной арифметике, шахматам, раннему развитию и многие другие направления в Балтийской Жемчужине. Частный детский сад и развивающие занятия для детей от 1 года. Запись по телефону +7 (911) 825 55 56">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/normalize.css">
     <link rel="shortcut icon" href="../img/favico.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="../js/jquery.maskedinput.js"></script>
-    <script src="../js/jquery.validate.min.js"></script>
-    <script src="../js/script.js"></script>
+    
     <title>Детский развивающий центр Эйнштейн в Санкт-Петербурге</title>
 </head>
 <body>
     <header class="header">
         <div class="container header-container">
+            
             <div class="container-logo">
                 <a href="https://vk.com/einstein_centr" class="logo">
-                    <img src="../img/Надпись-Эйнштейн.png" alt="" class="logo-img">
+                    <img src="../img/einstein-title.webp" alt="" class="logo-img">
                 </a>
             </div>
             <nav class="header-nav">
                 <ul class="nav-list ul-style">
                     <li class="nav-item list-style"><a href="#center" class="nav-item-link">О центре</a></li>
                     <li class="nav-item list-style"><a href="#programs" class="nav-item-link">Программы</a></li>
-                    <li class="nav-item list-style"><a href="#teachers" class="nav-item-link">Преподаватели</a></li>
+                   <!-- <li class="nav-item list-style"><a href="#teachers" class="nav-item-link">Преподаватели</a></li>-->
                     <li class="nav-item list-style"><a href="#reviews" class="nav-item-link">Отзывы</a></li>
                     <li class="nav-item list-style"><a href="#contacts" class="nav-item-link">Контакты</a></li>
                 </ul>
@@ -34,47 +34,78 @@
             <div class="header-image-links">
                 <a href="https://www.instagram.com/einstein_centrspb/"><img src="../img/inst.svg" alt="Instagram" class="image-links"></a>
                 <a href="https://vk.com/einstein_centr"><img src="../img/vk.svg" alt="VK" class="image-links"></a>
+                <a href="https://wa.me/79118255556"><img src="../img/whatsapp.svg" alt="WhatsApp" class="image-links"></a>
+                <div class="header-menu">
+                <button class="menu-open" ><img src="../img/menu.svg" alt=""></button>
             </div>
+            </div>
+            
         </div>
     </header>
 
     <main class="main">
         <section class="section-about">
             <div class="container about-container">
-                <!--background-img-->
+                <div class="about-inner-container1">
+                    <form action="sender.php" method="POST" class="status">
+                    
+                        <h1 class="form-heading h1-heading">Оставьте нам свои контакты и мы свяжемся с вами!</h1>
+                        
+                        <input type="text" class="name input-form" name="name" placeholder="Как вас зовут?" required>
+                        
+                        <input type="text" class="phone input-form" name="phone" placeholder="Телефон" required>
+                        <input type="email" class="input-form" name="email" placeholder="Email" >
+                        <textarea name="text" id="" cols="30" rows="10" placeholder="Комментарии"></textarea>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreement" class="checkbox-input" id="agreement" required>
+                            <label for="agreement" class="checkbox-label">Я согласен на обработку персональных данных и с условиями <a href="agreement.html"
+                                target="_blank" class="checkbox-link">пользовательского соглашения</a>.</label>
+                        </div><div class="status">
+                        <button type="button" class="send-form">Отправить форму</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="about-inner-container2">
                     <h1 class="about-container-text h1-heading">Детский центр Эйнштейн</h1>
                     <h1 class="about-container-text h1-heading">Ждет вас на занятия!</h1>
                     <p class="about-container-paragraph">*Центр интеллектуального развития для детей от 1 года в Балтийской Жемчужине,<br> Петергофское шоссе 55 к1.</p>
+                </div>
             </div>
         </section>
 
-        <section class="form">
+        <!--<section class="form">
             <div class="container form-container">
                 
                 
                 <img src="../img/einstein.webp" alt="" class="form-img">
-                <form action="sender.php" method="POST">
+                <form action="sender.php" method="POST" class="status">
+                    
                     <h1 class="form-heading h1-heading">Оставьте нам свои данные и мы свяжемся с вами!</h1>
                     
-                    <input type="text" class="name" name="name" placeholder="Как вас зовут?" required>
+                    <input type="text" class="name input-form" name="name" placeholder="Как вас зовут?" required>
                     
-                    <input type="text" class="phone" name="phone" placeholder="Телефон" required>
-                    <input type="email" name="email" placeholder="Email" >
+                    <input type="text" class="phone input-form" name="phone" placeholder="Телефон" required>
+                    <input type="email" class="input-form" name="email" placeholder="Email" >
                     <textarea name="text" id="" cols="30" rows="10" placeholder="Комментарии"></textarea>
+                    <div class="checkbox">
+                        <input type="checkbox" name="agreement" class="checkbox-input" id="agreement" required>
+                        <label for="agreement" class="checkbox-label">Я согласен на обработку персональных данных и с условиями <a href="agreement.html"
+                            target="_blank">пользовательского соглашения</a>.</label>
+                    </div><div class="status">
                     <button type="button" class="send-form">Отправить форму</button>
-                    <div class="status"></div>
+                    </div>
                 </form>
             </div>
-        </section>
+        </section>-->
         <section class="section-why"  id="center">
             <div class="container why-container">
                 <h1 class="why-container-text h1-heading">Почему родители выбирают нас</h1>
                 <ul class="why-container-list ul-style">
-                    <li class="why-container-item list-style"><img src="../img/puzzle.svg" alt="" class="why-img">Всестороннее развитие детей</li>
-                    <li class="why-container-item list-style"><img src="../img/emoji-wink.svg" alt="" class="why-img">Дружелюбная атмосфера</li>
-                    <li class="why-container-item list-style"><img src="../img/patch-check.svg" alt="" class="why-img">Сертифицированные педагоги</li>
-                    <li class="why-container-item list-style"><img src="../img/person-check.svg" alt="" class="why-img">Индивидуальный подход</li>
-                    <li class="why-container-item list-style"><img src="../img/piggy-bank.svg" alt="" class="why-img">Оплата материнским капиталом</li>
+                    <li class="why-container-item list-style li-first"><img src="../img/puzzle.svg" alt="" class="why-img">Всестороннее развитие детей</li>
+                    <li class="why-container-item list-style li-second"><img src="../img/emoji-wink.svg" alt="" class="why-img">Дружелюбная атмосфера</li>
+                    <li class="why-container-item list-style li-first"><img src="../img/patch-check.svg" alt="" class="why-img">Сертифицированные педагоги</li>
+                    <li class="why-container-item list-style li-second"><img src="../img/person-check.svg" alt="" class="why-img">Индивидуальный подход</li>
+                    <li class="why-container-item list-style li-first"><img src="../img/piggy-bank.svg" alt="" class="why-img">Оплата материнским капиталом</li>
                 </ul>
             </div>
         </section>
@@ -85,9 +116,9 @@
                 <ul class="directions-list ul-style">
                     
                     <li class="directions-item list-style"> 
-                        <img src="../img/ZoysLQnsY7I.jpg" alt="" class="directions-img">
+                        <img src="../img/ZoysLQnsY7I.webp" alt="" class="directions-img">
                         <div class="directions-item-div">
-                        <p class="directions-paragraph">Детский сад</p>
+                        <p class="directions-paragraph">Детский сад (Полный/Неполный день)</p>
                         <p class="directions-text">
                             Мы помогаем детям учиться проявлять инициативу и находить общий язык друг с другом. <br>
                             В обстановке нашего сада дети общаются не только со сверстниками, но и с ребятами младшего и старшего возраста. <br>
@@ -98,7 +129,7 @@
                         </div>
                     </li>
                     <li class="directions-item list-style"> 
-                        <img src="../img/young.jpg" alt="" class="directions-img">
+                        <img src="../img/young.webp" alt="" class="directions-img">
                         <div class="directions-item-div">
                         <p class="directions-paragraph">Раннее развитие</p>
                         <p class="directions-text">
@@ -117,9 +148,9 @@
                         </div>
                     </li>
                     <li class="directions-item list-style"> 
-                        <img src="../img/logoped.jpg" alt="" class="directions-img">
+                        <img src="../img/logoped.webp" alt="" class="directions-img">
                         <div class="directions-item-div">
-                        <p class="directions-paragraph">Логопед</p>
+                        <p class="directions-paragraph">Логопед-дефектолог</p>
                         <p class="directions-text">
                             Многие родители думают, что речь ребёнка исправится сама собой, с возрастом. <br>
                             Это не так! <br>
@@ -136,7 +167,7 @@
                         </div>
                     </li>
                     <li class="directions-item list-style"> 
-                        <img src="../img/mental.png" alt="" class="directions-img">
+                        <img src="../img/mental.webp" alt="" class="directions-img">
                         <div class="directions-item-div">
                         <p class="directions-paragraph">Ментальная арифметика</p>
                         <p class="directions-text">
@@ -154,7 +185,7 @@
                         </div>
                     </li>
                     <li class="directions-item list-style"> 
-                        <img src="../img/chess.jpg" alt="" class="directions-img">
+                        <img src="../img/chess.webp" alt="" class="directions-img">
                         <div class="directions-item-div">
                         <p class="directions-paragraph">Шахматы</p>
                         <p class="directions-text">
@@ -174,6 +205,34 @@
                             </li>
                             
                         </ul>
+
+                        <!--BUTTON-->
+                        </div>
+                    </li>
+                    <li class="directions-item list-style"> 
+                        <img src="../img/Podgotovka-rebenka-k-schkole-492876.webp" alt="" class="directions-img">
+                        <div class="directions-item-div">
+                        <p class="directions-paragraph">Подготовка к школе (5-7 лет)</p>
+                        <p class="directions-text">
+                            Одним из основных направлений деятельности нашего центра является раннее развитие ребенка. <br>
+                            
+                        </p>
+                        <p class="directions-benefits-item">
+                            Этим с большой ответственностью занимаются дипломированные и влюбленные в <br> свое дело специалисты, используя в процессе воспитания самые передовые и проверенные <br> методики. <br>
+                            Помимо этого, они знакомятся окружающим миром, природоведением, <br> будут решать логические задачи и проходить психологическое тестирование. <br>
+                            Мы используем собственный дидактический материал, наглядные пособия,<br> а занятия проходят в игровой и понятной для ребенка форме.</p>
+                        <!--BUTTON-->
+                        </div>
+                    </li>
+                    <li class="directions-item list-style"> 
+                        <img src="../img/590.webp" alt="" class="directions-img">
+                        <div class="directions-item-div">
+                        <p class="directions-paragraph">Чтение (от 4 лет)</p>
+                        <p class="directions-text">
+                            С малых лет дети учатся читать, основная цель родителей – помогать им в этом, но часто этому процессу уделяется недостаточное количество времени. Наши обучающие курсы помогут вашему ребенку развить речь и научиться читать. Для начала, наши педагоги займутся развитием речи у ребенка и только после того, как получим положительные успехи, мы приступим к следующему процессу – чтению.
+                        </p>
+                        <p class="directions-benefits-item">
+                            </p>
                         <!--BUTTON-->
                         </div>
                     </li>
@@ -196,11 +255,11 @@
             <div class="container">
                 <h1 class="reviews-heading h1-heading">Отзывы о нас:</h1>
                 <ul class="reviews-list ul-style">
-                    <li class="reviews-item list-style"><img src="../img/san4oys.jpg" alt="" class="reviews-photo"><p class="reviews-review-name">Александр Балицкий</p><p class="reviews-review">Приобрёл абонементы на неполную группу, дети довольны, адаптация прошла незаметно. На следующий месяц однозначно будем брать полный день!
-                        Воспитателя дети обожают!</p></li>
-                    <li class="reviews-item list-style"><img src="../img/katrin.jpg" alt="" class="reviews-photo"><p class="reviews-review-name">Екатерина Шевцова</p><p class="reviews-review">
-                        Приходили на пробное занятие на подготовку к школе, очень уютно в центре. Преподаватель отличный! Порадовала система лояльности в этом центре)</p></li>
-                    <li class="reviews-item list-style"><img src="../img/natasha.jpg" alt="" class="reviews-photo"><p class="reviews-review-name">Наташа Сычева</p><p class="reviews-review">Ходим на песочную терапию. Очень увлекательные занятия,дочь не отвлекается,выполняет все задания. Эти занятия развивают мелкую моторику,развивают воображение, преподаватель находит подход к каждому ребенку. Посоветовала уже нескольким подругам.</p></li>
+                    <li class="reviews-item list-style"><img src="../img/san4oys.webp" alt="" class="reviews-photo"><p class="reviews-review-name">Александр Балицкий</p><p class="reviews-review">"Приобрёл абонементы на неполную группу, дети довольны, адаптация прошла незаметно. На следующий месяц однозначно будем брать полный день!
+                        Воспитателя дети обожают!"</p></li>
+                    <li class="reviews-item list-style"><img src="../img/katrin.webp" alt="" class="reviews-photo"><p class="reviews-review-name">Екатерина Шевцова</p><p class="reviews-review">
+                        "Приходили на пробное занятие на подготовку к школе, очень уютно в центре. Преподаватель отличный! Порадовала система лояльности в этом центре)"</p></li>
+                    <li class="reviews-item list-style"><img src="../img/natasha.webp" alt="" class="reviews-photo"><p class="reviews-review-name">Наташа Сычева</p><p class="reviews-review">"Ходим на песочную терапию. Очень увлекательные занятия,дочь не отвлекается,выполняет все задания. Эти занятия развивают мелкую моторику,развивают воображение, преподаватель находит подход к каждому ребенку. Посоветовала уже нескольким подругам."</p></li>
                 </ul>
             </div>
         </section>
@@ -250,6 +309,17 @@
                                 <a href="https://vk.com/einstein_centr" class="contacts-paragraph-link">vk.com/einstein_centr</a>
                             </p>
                         </div>
+                        <li class="contacts-item list-style">
+                            <div class="contacts-img"><svg id="Bold" enable-background="new 0 0 24 24" height="32" fill="#8d949d" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z"/><path d="m20.52 3.449c-7.689-7.433-20.414-2.042-20.419 8.444 0 2.096.549 4.14 1.595 5.945l-1.696 6.162 6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99z"/></svg></div>
+                            <div class="contacts-info">
+                                <p class="contacts-paragraph-title">
+                                    Наш WhatsApp: 
+                                </p>
+                                <p class="contacts-paragraph-links">
+                                    <a href="https://wa.me/79118255556" class="contacts-paragraph-link">+7 (911) 825 55 56</a>
+                                </p>
+                            </div>
+                        </li>
                     </li>
                 </ul>
             </div>
@@ -263,6 +333,7 @@
             </p>
         </div>
     </footer>
+    
     <script>
         const anchors = document.querySelectorAll('a.scroll-to')
 
@@ -283,7 +354,7 @@
     <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "   ");
     
     ym(85285369, "init", {
     clickmap:true,
@@ -295,5 +366,16 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/85285369" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script> 
+    $(function(){
+        $('.menu-open').click(function(){
+            $('.header-nav').toggleClass('show-menu')
+        })
+    });
+    </script>
+    <script src="../js/jquery.maskedinput.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
